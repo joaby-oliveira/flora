@@ -15,6 +15,19 @@ a {
   text-decoration: none;
 }
 
+@mixin pseudo {
+  content: "";
+  display: block;
+}
+
+@mixin infoAbsolute {
+  font-family: "Montserrat";
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $secondary-2;
+}
+
 // Colors
 $primary-1: #fcf7fc;
 $primary-2: #fcebf9;
@@ -25,6 +38,35 @@ $enphasis-3: #f87ce4;
 $secondary-1: #3d293a;
 $secondary-2: #21121f;
 
+// Fonts
+@mixin title {
+  color: $secondary-2;
+  font-family: "Cinzel";
+}
+
+@mixin title-1 {
+  @include title;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+@mixin title-2 {
+  @include title;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+@mixin cta {
+  color: $secondary-1;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-variant: small-caps;
+}
+
+@mixin cta-1 {
+  @include cta;
+  font-size: 1.5rem;
+}
 // Flex
 .flex {
   display: flex;

@@ -1,26 +1,77 @@
+@import "global";
 @import "navbar";
-
-// Fonts
-@mixin title {
-  color: $secondary-2;
-  font-family: "Cinzel";
-}
-
-@mixin title-1 {
-  @include title;
-  font-size: 4rem;
-  font-weight: 400;
-}
-
-@mixin title-2 {
-  @include title;
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-.title {
+@import "slider";
+.title-1 {
   @include title-1;
 }
+
 .title-3 {
   @include title-2;
+}
+
+.cta {
+  padding-top: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  &::after {
+    @include pseudo;
+    width: 100%;
+    height: 0.25rem;
+    background: $secondary-1;
+    margin-top: 1rem;
+  }
+  &:hover {
+    background: $primary-1;
+  }
+}
+
+.cta-1 {
+  @include cta-1;
+}
+
+section#hero {
+  position: relative;
+  height: 100vh;
+  header {
+    margin-top: 4rem;
+    img {
+      margin-right: 4rem;
+    }
+  }
+  .info {
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
+    p {
+      @include infoAbsolute;
+      margin: 0 1rem;
+      &::after {
+        @include pseudo;
+        width: 100%;
+        height: 0.25rem;
+        background: $primary-2;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .socialMedia {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    a {
+      @include infoAbsolute;
+      writing-mode: vertical-rl;
+      margin-bottom: 1rem;
+      transition: 0.2s;
+      &:hover {
+        color: $enphasis-3;
+        letter-spacing: 0;
+      }
+    }
+    &::before {
+      @include pseudo;
+      width: 1rem;
+      height: 0.25rem;
+    }
+  }
 }

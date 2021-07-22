@@ -1,0 +1,27 @@
+@import "global";
+#sliderContainer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  .sliderItem {
+    height: 80vh;
+    overflow: hidden;
+    .sliderImage {
+      display: none;
+      width: 100%;
+    }
+  }
+  .dots {
+    width: 100%;
+    .dot {
+      display: block;
+      width: 0.9375rem;
+      height: 0.9375rem;
+      background: $primary-3;
+      border-radius: 1rem;
+      margin: 1rem 0.5rem;
+      &.selected {
+        background: $enphasis-3;
+      }
+    }
+  }
+}

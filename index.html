@@ -10,34 +10,68 @@
 </head>
 
 <body>
-  <nav class="flex spaceBetween">
-    <img src="public/logo.svg" alt="Flora Logo">
-    <div class="flex">
-      <ul class="flex crossCenter">
-        <li>
-          <a href="#">
-            flores e buquês
-          </a>
-        </li>
-        <img src="public/spacer.svg" alt="spacer">
-        <li>
-          <a href="#">
-            sobre nós
-          </a>
-        </li>
-        <img src="public/spacer.svg" alt="spacer">
-        <li>
-          <a href="#">
-            contato
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="accessShop flex crossCenter">
-        <h3 class="title-3">Acessar Loja</h3>
-        <img src="public/shop.svg">
-      </a>
+  <section id="hero">
+    <nav class="flex spaceBetween">
+      <img src="public/logo.svg" alt="Flora Logo">
+      <div class="flex">
+        <ul class="flex crossCenter">
+          <li>
+            <a href="#">
+              flores e buquês
+            </a>
+          </li>
+          <img src="public/spacer.svg" alt="spacer">
+          <li>
+            <a href="#">
+              sobre nós
+            </a>
+          </li>
+          <img src="public/spacer.svg" alt="spacer">
+          <li>
+            <a href="#">
+              contato
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="accessShop flex crossCenter">
+          <h3 class="title-3">Acessar Loja</h3>
+          <img src="public/shop.svg">
+        </a>
+      </div>
+    </nav>
+    <header class="flex crossCenter mainCenter">
+      <img src="public/sunflower.svg" alt="Girassol">
+      <div>
+        <h1 class="title-1">Beleza, <br> Aroma &<br> Delicadeza</h1>
+        <a class="cta cta-1 flex mainCenter column" href="#">acessar loja online</a>
+      </div>
+    </header>
+    <span class="info flex">
+      <p>10 anos no mercado</p>
+      <p>flores do nosso jardim</p>
+    </span>
+    <span class="socialMedia flex column">
+      <a href="#">instagram</a>
+      <a href="#">whatsapp</a>
+    </span>
+  </section>
+  <section id="sliderContainer">
+    <div class="sliderItem flex column mainCenter crossCenter">
+      <img class="sliderImage" src="public/flower1.jpg" alt="Flor">
+      <img class="sliderImage" src="public/flower2.jpg" alt="Flor">
+      <img class="sliderImage" src="public/flower3.jpg" alt="Flor">
+      <img class="sliderImage" src="public/flower4.jpg" alt="Flor">
+      <img class="sliderImage" src="public/flower5.jpg" alt="Flor">
     </div>
-  </nav>
+    <div class="dots flex mainCenter">
+      <span class="dot selected"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+  <script src="index.js"></script>
 </body>
 
 </html>
