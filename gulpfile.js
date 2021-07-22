@@ -3,7 +3,7 @@ const sass = require('gulp-sass')(require('sass'))
 const autoPrefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync').create()
 
-function compilaSass() {
+function compileSass() {
   return gulp
     .src('styles/css/scss/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
@@ -14,7 +14,7 @@ function compilaSass() {
     .pipe(gulp.dest('styles/css/'))
     .pipe(browserSync.stream())
 }
-gulp.task('sass', compilaSass)
+gulp.task('sass', compileSass)
 
 function browser() {
   browserSync.init({
@@ -27,7 +27,7 @@ function browser() {
 gulp.task('browser-sync', browser)
 
 function watch() {
-  gulp.watch('styles/css/scss/*.scss', compilaSass)
+  gulp.watch('styles/css/scss/*.scss', compileSass)
 }
 
 gulp.task('watch', watch)

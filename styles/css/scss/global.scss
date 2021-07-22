@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap");
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Colors
+$primary-1: #fcf7fc;
+$primary-2: #fcebf9;
+$primary-3: #c2a3bd;
+$enphasis-1: #fab7f0;
+$enphasis-2: #f69be8;
+$enphasis-3: #f87ce4;
+$secondary-1: #3d293a;
+$secondary-2: #21121f;
+
+// Flex
+.flex {
+  display: flex;
+}
+
+.mainCenter {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.crossCenter {
+  align-items: center;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
