@@ -1,9 +1,10 @@
 @import "global";
 #sliderContainer {
-  margin-top: 4rem;
+  padding-top: 8rem;
   margin-bottom: 4rem;
+  position: relative;
   .sliderItem {
-    height: 80vh;
+    height: calc(100vh - 158px);
     overflow: hidden;
     .sliderImage {
       display: none;
@@ -11,13 +12,14 @@
     }
   }
   .dots {
-    width: 100%;
+    margin-top: -4rem;
     .dot {
       display: block;
       width: 0.9375rem;
       height: 0.9375rem;
-      background: $primary-3;
-      border-radius: 1rem;
+      background: $primary-1;
+      // border-radius: 1rem;
+      box-shadow: 0 0 50px #0000009f;
       margin: 1rem 0.5rem;
       &.selected {
         background: $enphasis-3;

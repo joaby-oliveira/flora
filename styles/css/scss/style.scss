@@ -43,9 +43,8 @@
 
 section#hero {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 158px);
   header {
-    margin-top: 4rem;
     img {
       margin-right: 4rem;
     }
@@ -89,7 +88,7 @@ section#hero {
 }
 
 section#about {
-  margin: 7rem 4rem;
+  padding: 7rem 4rem;
   .aboutText {
     max-width: 36rem;
   }
