@@ -44,6 +44,12 @@ $secondary-2: #21121f;
   font-family: "Cinzel";
 }
 
+@mixin text {
+  color: $secondary-1;
+  margin-top: 1rem;
+  font-family: "Montserrat";
+}
+
 @mixin title-1 {
   @include title;
   font-size: 4rem;
@@ -52,8 +58,24 @@ $secondary-2: #21121f;
 
 @mixin title-2 {
   @include title;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+@mixin title-3 {
+  @include title;
   font-size: 1.125rem;
   font-weight: 700;
+}
+
+@mixin text-1 {
+  @include text;
+  font-size: 1rem;
+}
+
+@mixin text-2 {
+  @include text;
+  font-size: 0.875rem;
 }
 
 @mixin cta {
@@ -82,6 +104,14 @@ $secondary-2: #21121f;
 
 .crossCenter {
   align-items: center;
+}
+
+.mainStart {
+  justify-content: flex-start;
+}
+
+.crossStart {
+  align-items: flex-start;
 }
 
 .spaceBetween {

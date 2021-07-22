@@ -5,8 +5,20 @@
   @include title-1;
 }
 
-.title-3 {
+.title-2 {
   @include title-2;
+}
+
+.title-3 {
+  @include title-3;
+}
+
+.text-1 {
+  @include text-1;
+}
+
+.text-2 {
+  @include text-2;
 }
 
 .cta {
@@ -74,4 +86,40 @@ section#hero {
       height: 0.25rem;
     }
   }
+}
+
+section#about {
+  margin: 7rem 4rem;
+  .aboutText {
+    max-width: 36rem;
+  }
+  .aboutList {
+    margin-left: 4rem;
+    text-align: center;
+    li {
+      &::after {
+        @include pseudo;
+        width: 0.25rem;
+        height: 6.25rem;
+        background: $primary-2;
+        margin: 0 1rem;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      max-width: 12rem;
+      .text-1 {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+section#garden {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../../public/garden.png");
+  background-size: cover;
 }
