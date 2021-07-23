@@ -131,3 +131,82 @@ section#garden {
     max-width: 40rem;
   }
 }
+
+section#contact {
+  margin-top: 4rem;
+  .contactInfo {
+    width: 50%;
+    margin-left: 4rem;
+    ul {
+      li {
+        font-family: "Montserrat";
+        font-size: 1rem;
+        color: $secondary-2;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        &::before {
+          @include pseudo;
+          width: 2rem;
+          height: 4px;
+          background: $primary-2;
+          margin-top: -1rem;
+          margin-right: 1rem;
+        }
+      }
+      .socialMedia {
+        a {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+  .contact {
+    width: 50%;
+    form {
+      margin-top: 2rem;
+      .inputBlock {
+        margin-bottom: 2rem;
+        label {
+          font-size: 1.125rem;
+          font-family: "Cinzel";
+          font-weight: 700;
+          color: $secondary-1;
+          margin-bottom: 1rem;
+        }
+        input {
+          padding: 1rem 1rem;
+          font-family: "Montserrat";
+          border: 0.25rem solid $primary-2;
+          outline: 0;
+          width: 25rem;
+          transition: 0.2s;
+          &::placeholder {
+            color: $primary-3;
+            font-family: "Montserrat";
+            font-size: 1rem;
+          }
+          &:focus {
+            box-shadow: 0 0 1px 0.25rem $enphasis-1;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.quote {
+  margin-top: 8rem;
+  padding: 4rem 0;
+  background-image: linear-gradient(#000000aa, #22222280), url("../../../public/flowerField.jpg");
+  background-size: cover;
+  color: $primary-1;
+  text-align: center;
+  .quoteText {
+    font: italic 300 2.25rem "Montserrat";
+    max-width: 34rem;
+  }
+  .quoteWriter {
+    margin-top: 1rem;
+    font: 700 1.125rem "Cinzel";
+  }
+}
