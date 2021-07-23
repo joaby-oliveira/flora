@@ -1,5 +1,15 @@
 @import "global";
 
+@media only screen and (max-width: 980px) {
+  body {
+    nav.flex {
+      > div {
+        display: none;
+      }
+    }
+  }
+}
+
 nav {
   top: 0;
   position: sticky;
