@@ -1,5 +1,4 @@
 const dots = document.querySelectorAll('.dot')
-// dots[slideIndex].classList.add('selected')
 let slideIndex = 0
 showSlides()
 
@@ -24,7 +23,6 @@ function showSlides() {
 }
 
 const menu = document.querySelector('.menuContainer')
-
 const menuButton = document.querySelector('#menu')
 menuButton.addEventListener('click', () => {
   const isOpen = menu.classList.contains('show')
@@ -37,7 +35,6 @@ menuButton.addEventListener('click', () => {
 
 
 const target = document.querySelectorAll('[data-anime]')
-console.log(target)
 const animationClass = 'animate'
 
 function animeScroll() {
