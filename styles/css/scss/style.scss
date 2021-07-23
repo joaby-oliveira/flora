@@ -25,6 +25,7 @@
   padding-top: 1rem;
   margin-top: 2rem;
   text-align: center;
+  transition: 0.2s;
   &::after {
     @include pseudo;
     width: 100%;
@@ -34,6 +35,9 @@
   }
   &:hover {
     background: $primary-1;
+  }
+  &:active {
+    background: $primary-2;
   }
 }
 
@@ -172,8 +176,10 @@ section#contact {
           font-weight: 700;
           color: $secondary-1;
           margin-bottom: 1rem;
+          cursor: pointer;
         }
-        input {
+        input,
+        textarea {
           padding: 1rem 1rem;
           font-family: "Montserrat";
           border: 0.25rem solid $primary-2;
@@ -189,6 +195,13 @@ section#contact {
             box-shadow: 0 0 1px 0.25rem $enphasis-1;
           }
         }
+        textarea {
+          resize: none;
+          padding-bottom: 4rem;
+        }
+      }
+      .cta {
+        margin-top: 0;
       }
     }
   }
