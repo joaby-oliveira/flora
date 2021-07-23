@@ -3,6 +3,19 @@
 @media only screen and (max-width: 980px) {
   body {
     nav.flex {
+      padding: 1rem;
+      #logo {
+        width: 4rem;
+      }
+      img#menu {
+        display: block;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
       > div {
         display: none;
       }
@@ -18,6 +31,9 @@ nav {
   z-index: 1000;
   #logo {
     width: 4rem;
+  }
+  #menu {
+    display: none;
   }
   ul {
     margin-right: 4rem;

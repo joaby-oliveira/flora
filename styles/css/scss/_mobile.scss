@@ -1,5 +1,24 @@
 @media only screen and (max-width: 980px) {
   body {
+    .title-1 {
+      font-size: 2rem;
+    }
+
+    .title-2 {
+      font-size: 1.5rem;
+    }
+
+    .title-3 {
+      font-size: 1.125rem;
+    }
+
+    .text-1 {
+      font-size: 1rem;
+    }
+
+    .text-2 {
+      font-size: 0.875rem;
+    }
     section#hero {
       width: 100vw;
       header {
@@ -56,7 +75,28 @@
       }
     }
     section#contact {
+      padding: 2rem;
       flex-direction: column;
+      .contactInfo {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 4rem;
+        .title-2 {
+          margin-bottom: 2rem;
+        }
+        li.info {
+          margin: 1rem;
+        }
+      }
+      .contact {
+        width: 100%;
+        form {
+          width: 100%;
+          div.inputBlock {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

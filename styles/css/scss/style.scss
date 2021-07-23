@@ -2,24 +2,33 @@
 @import "navbar";
 @import "slider";
 @import "mobile";
+
 .title-1 {
-  @include title-1;
+  @include title;
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .title-2 {
-  @include title-2;
+  @include title;
+  font-size: 2.25rem;
+  font-weight: 700;
 }
 
 .title-3 {
-  @include title-3;
+  @include title;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .text-1 {
-  @include text-1;
+  @include text;
+  font-size: 1rem;
 }
 
 .text-2 {
-  @include text-2;
+  @include text;
+  font-size: 0.875rem;
 }
 
 .cta {
@@ -144,6 +153,7 @@ section#contact {
     form {
       margin-top: 2rem;
       .inputBlock {
+        width: 25rem;
         margin-bottom: 2rem;
         label {
           font-size: 1.125rem;
@@ -155,11 +165,11 @@ section#contact {
         }
         input,
         textarea {
+          width: 100%;
           padding: 1rem 1rem;
           font-family: "Montserrat";
           border: 0.25rem solid $primary-2;
           outline: 0;
-          width: 25rem;
           transition: 0.2s;
           &::placeholder {
             color: $primary-3;
@@ -267,7 +277,7 @@ footer.footer {
   }
   .bottom {
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     text-align: center;
     background: $secondary-1;
     font: 700 0.875rem "Montserrat";

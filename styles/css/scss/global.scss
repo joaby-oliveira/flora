@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Reset
 * {
   margin: 0;
@@ -48,34 +52,6 @@ $secondary-2: #21121f;
   color: $secondary-1;
   margin-top: 1rem;
   font-family: "Montserrat";
-}
-
-@mixin title-1 {
-  @include title;
-  font-size: 4rem;
-  font-weight: 400;
-}
-
-@mixin title-2 {
-  @include title;
-  font-size: 2.25rem;
-  font-weight: 700;
-}
-
-@mixin title-3 {
-  @include title;
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-@mixin text-1 {
-  @include text;
-  font-size: 1rem;
-}
-
-@mixin text-2 {
-  @include text;
-  font-size: 0.875rem;
 }
 
 @mixin cta {
