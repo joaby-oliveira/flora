@@ -48,6 +48,13 @@
         }
       }
     }
+    section#garden {
+      padding: 2rem;
+      text-align: center;
+      .title-2 {
+        margin-top: 4rem;
+      }
+    }
     section#contact {
       flex-direction: column;
     }
