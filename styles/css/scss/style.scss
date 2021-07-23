@@ -138,32 +138,6 @@ section#garden {
 
 section#contact {
   margin-top: 4rem;
-  .contactInfo {
-    width: 50%;
-    margin-left: 4rem;
-    ul {
-      li {
-        font-family: "Montserrat";
-        font-size: 1rem;
-        color: $secondary-2;
-        margin-left: 1rem;
-        margin-top: 2rem;
-        &::before {
-          @include pseudo;
-          width: 2rem;
-          height: 4px;
-          background: $primary-2;
-          margin-top: -1rem;
-          margin-right: 1rem;
-        }
-      }
-      .socialMedia {
-        a {
-          margin-right: 2rem;
-        }
-      }
-    }
-  }
   .contact {
     width: 50%;
     form {
@@ -207,6 +181,38 @@ section#contact {
   }
 }
 
+// It's here just because it is used in another section: the footer
+.contactInfo {
+  width: 50%;
+  margin-left: 4rem;
+  ul {
+    li {
+      font-family: "Montserrat";
+      font-size: 1rem;
+      color: $secondary-2;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      &::before {
+        @include pseudo;
+        width: 2rem;
+        height: 4px;
+        background: $primary-2;
+        margin-top: -1rem;
+        margin-right: 1rem;
+      }
+    }
+    .socialMedia {
+      a {
+        transition: 0.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
 div.quote {
   margin-top: 8rem;
   padding: 4rem 0;
@@ -221,5 +227,49 @@ div.quote {
   .quoteWriter {
     margin-top: 1rem;
     font: 700 1.125rem "Cinzel";
+  }
+}
+
+footer.footer {
+  background: $secondary-2;
+  .firstRow {
+    padding: 2rem 0;
+    width: 100%;
+    border-bottom: 2px solid $secondary-1;
+  }
+  .contactInfo {
+    width: auto;
+    text-align: center;
+    margin: 2rem 0;
+    .title-2 {
+      color: $primary-1;
+    }
+    li {
+      color: $primary-2;
+      margin: 1rem 0;
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+      &::before {
+        background: $secondary-1;
+        margin: 1rem 0;
+      }
+      a {
+        margin: 1rem;
+        img {
+          filter: brightness(2);
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    background: $secondary-1;
+    font: 700 0.875rem "Montserrat";
+    color: $primary-3;
   }
 }
