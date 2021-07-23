@@ -1,18 +1,18 @@
 const dots = document.querySelectorAll('.dot')
 // dots[slideIndex].classList.add('selected')
-let slideIndex = 0;
-showSlides();
+let slideIndex = 0
+showSlides()
 
 
 function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("sliderImage");
+  let i
+  let slides = document.getElementsByClassName("sliderImage")
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "block"
   dots.forEach((dot, i) => {
     if (i === slideIndex - 1) {
       dot.classList.add('selected')
@@ -33,4 +33,24 @@ menuButton.addEventListener('click', () => {
   } else {
     menu.classList.add('show')
   }
+})
+
+
+const target = document.querySelectorAll('[data-anime]')
+console.log(target)
+const animationClass = 'animate'
+
+function animeScroll() {
+  const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
+  target.forEach((e) => {
+    if ((windowTop) > e.offsetTop) {
+      e.classList.add(animationClass)
+    } else {
+      e.classList.remove(animationClass)
+    }
+  })
+}
+
+window.addEventListener('scroll', () => {
+  animeScroll()
 })

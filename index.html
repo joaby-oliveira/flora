@@ -6,6 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/css/style.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="114x114" href="public/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="public/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- SEO -->
+  <meta name="description"
+    content="Flora, conheça a maior floricultura da cidade de Marília, nossas flores são repletas de amor e lealdade">
   <title>Flora</title>
 </head>
 
@@ -58,7 +69,7 @@
       <a href="#">whatsapp</a>
     </span>
   </section>
-  <section id="sliderContainer">
+  <section id="sliderContainer" data-anime="bottomToTop">
     <div class="sliderItem flex column mainCenter crossCenter">
       <img class="sliderImage" src="public/flower1.jpg" alt="Flor">
       <img class="sliderImage" src="public/flower2.jpg" alt="Flor">
@@ -75,7 +86,7 @@
     </div>
   </section>
   <section id="about" class="flex crossCenter">
-    <div class="aboutText">
+    <div class="aboutText" data-anime="leftToRight">
       <h2 class="title-2">
         Nos conheça melhor
       </h2>
@@ -93,7 +104,7 @@
         principal parceria é a Prever
       </p>
     </div>
-    <ul class="aboutList flex crossStart">
+    <ul class="aboutList flex crossStart" data-anime="rightToLeft">
       <li class="flex crossStart">
         <div class="flex column crossCenter">
           <img src="public/plant.svg" alt="Planta">
@@ -124,11 +135,12 @@
     </ul>
   </section>
   <section id="garden" class="flex column crossCenter">
-    <h2 class="title-2">Temos um jardim próprio</h2>
-    <p class="text-1">É exatamente por isso que não necessitamos de esperar prazos longos ou nos preocuparmos com a
+    <h2 class="title-2" data-anime="bottomToTop">Temos um jardim próprio</h2>
+    <p class="text-1" data-anime="bottomToTop">É exatamente por isso que não necessitamos de esperar prazos longos ou
+      nos preocuparmos com a
       qualidade das flores, porque nossas flores passam por um rígido processo de qualidade. </p>
   </section>
-  <section id="contact" class="flex mainCenter">
+  <section id="contact" class="flex mainCenter" data-anime="bottomToTop">
     <div class="contactInfo">
       <h2 class="title-2">Informações</h2>
       <ul class="">
@@ -180,10 +192,10 @@
     </div>
   </section>
   <div class="quote flex column mainCenter crossCenter">
-    <p class="quoteText">
+    <p class="quoteText" data-anime="bottomToTop">
       "O QUE SERIA DA VIDA SE NÃO BROTASSE UMA FLOR?"
     </p>
-    <p class="quoteWriter">
+    <p class="quoteWriter" data-anime="bottomToTop">
       Victor Kley
     </p>
   </div>
