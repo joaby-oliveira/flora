@@ -22,3 +22,15 @@ function showSlides() {
   })
   setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
+
+const menu = document.querySelector('.menuContainer')
+
+const menuButton = document.querySelector('#menu')
+menuButton.addEventListener('click', () => {
+  const isOpen = menu.classList.contains('show')
+  if (isOpen) {
+    menu.classList.remove('show')
+  } else {
+    menu.classList.add('show')
+  }
+})
