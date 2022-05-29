@@ -1,6 +1,6 @@
 randes projetos.
 
-# Flora é uma floricultura que foi desenvolvida e criada na minha mente, algo fictício, porém é uma ótima floricultura 😂 
+# Flora é uma floricultura que foi desenvolvida e criada na minha mente, algo fictício, porém é uma ótima floricultura rs
 
 ## Basicamente, o site se resume em uma landing page, algo institucional, criado para apresentar essa empresa que foi criada durante o processo seletivo de devs da Prever
 
